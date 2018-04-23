@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataConnections>
+    <OlapDataConnection Name="Connection 1" ConnectionString="provider=msolap;data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dll;initial catalog=&quot;Adventure Works DW Standard Edition&quot;;timeout=1200;Cube Name=Adventure Works;" />
+  </DataConnections>
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Data Source 1">
+      <OlapDataProvider DataConnection="Connection 1" />
+    </DataSource>
+  </DataSources>
+  <Items>
+    <Pivot ComponentName="pivotDashboardItem1" Name="Sales Amount" DataSource="dataSource1">
+      <DataItems>
+        <Measure DataMember="[Measures].[Internet Sales Amount]" UniqueName="DataItem0">
+          <NumericFormat FormatType="Currency" IncludeGroupSeparator="true" CurrencyCultureName="en-US" />
+        </Measure>
+        <Dimension DataMember="[Date].[Calendar].[Date]" GroupIndex="1" UniqueName="DataItem6" />
+        <Dimension DataMember="[Date].[Calendar].[Month]" GroupIndex="1" UniqueName="DataItem5" />
+        <Dimension DataMember="[Date].[Calendar].[Calendar Quarter]" GroupIndex="1" UniqueName="DataItem4" />
+        <Dimension DataMember="[Date].[Calendar].[Calendar Semester]" GroupIndex="1" UniqueName="DataItem3" />
+        <Dimension DataMember="[Date].[Calendar].[Calendar Year]" GroupIndex="1" UniqueName="DataItem2" />
+        <Dimension DataMember="[Customer].[City].[City]" UniqueName="DataItem7" />
+        <Dimension DataMember="[Customer].[Country].[Country]" UniqueName="DataItem1" />
+      </DataItems>
+      <Columns>
+        <Column Name="DataItem2" />
+        <Column Name="DataItem3" />
+        <Column Name="DataItem4" />
+        <Column Name="DataItem5" />
+        <Column Name="DataItem6" />
+      </Columns>
+      <Rows>
+        <Row Name="DataItem1" />
+        <Row Name="DataItem7" />
+      </Rows>
+      <Values>
+        <Value Name="DataItem0" />
+      </Values>
+      <AutoExpandRowGroups>true</AutoExpandRowGroups>
+      <Names>
+        <Name Value="DataItem0" Name="Internet Sales Amount" />
+      </Names>
+    </Pivot>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem Weight="0.5" DashboardItem="pivotDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
