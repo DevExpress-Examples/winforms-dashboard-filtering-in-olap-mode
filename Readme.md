@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/Dashboard_OlapFiltering/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_OlapFiltering/Form1.vb))
+<!-- default file list end -->
 # How to apply filtering to a dashboard item's data in OLAP mode
 
 
