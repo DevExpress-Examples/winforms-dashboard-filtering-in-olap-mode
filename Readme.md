@@ -3,14 +3,17 @@
 
 * [Form1.cs](./CS/Dashboard_OlapFiltering/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_OlapFiltering/Form1.vb))
 <!-- default file list end -->
-# How to apply filtering to a dashboard item's data in OLAP mode
+# How to Apply Filter to Dashboard Item Data in OLAP Mode
 
 
-<p>The following example demonstrates how to <a href="http://documentation.devexpress.com/#Dashboard/CustomDocument15695">apply filtering</a> to a dashboard item's data in <a href="http://documentation.devexpress.com/#Dashboard/CustomDocument15707">OLAP</a> mode.</p>
-<br />
-<p>In this example, constant values and dashboard parameters are passed to a filter string to filter a dashboard item's data.</p>
-<p>In OLAP mode, a limited number of criteria operators are supported. This example shows how to use the supported criteria operators.</p>
+This example demonstrates how to [apply filtering](http://docs.devexpress.com/Dashboard/15695) to a dashboard item's data in [OLAP mode](http://docs.devexpress.com/Dashboard/15707).
 
-<br/>
+![](/images/screenshot.png)
 
+The OLAP data connection uses the DevExpress demo HTTP data pump available online at demos.devexpress.com/Services/OLAP/msmdpump.dll.
 
+The [DashboardOlapDataSource](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardOlapDataSource) instance is created at runtime. 
+
+The filter string uses [criteria language syntax](https://docs.devexpress.com/CoreLibraries/4928) specific to Dashboards and includes a [dashboard parameter](https://docs.devexpress.com/Dashboard/116918).
+
+> OLAP mode supports a limited number of criteria operators.
