@@ -17,3 +17,8 @@ The [DashboardOlapDataSource](https://docs.devexpress.com/Dashboard/DevExpress.D
 The filter string uses [criteria language syntax](https://docs.devexpress.com/CoreLibraries/4928) specific to Dashboards and includes a [dashboard parameter](https://docs.devexpress.com/Dashboard/116918).
 
 > OLAP mode supports a limited number of criteria operators.
+
+## Documentation
+- [OLAP Data Source](https://docs.devexpress.com/Dashboard/114427)
+- [Expression Constants, Operators, and Functions](https://docs.devexpress.com/Dashboard/400122)
+- [Dashboard Parameters](https://docs.devexpress.com/Dashboard/16135)
