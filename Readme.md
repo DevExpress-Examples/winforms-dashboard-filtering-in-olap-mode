@@ -3,7 +3,7 @@
 
 * [Form1.cs](./CS/Dashboard_OlapFiltering/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_OlapFiltering/Form1.vb))
 <!-- default file list end -->
-# How to Apply Filter to Dashboard Item Data in OLAP Mode
+# Winforms Dashboard - How to Apply Filter to Dashboard Item Data in OLAP Mode
 
 
 This example demonstrates how to [apply filtering](http://docs.devexpress.com/Dashboard/15695) to a dashboard item's data in [OLAP mode](http://docs.devexpress.com/Dashboard/15707).
