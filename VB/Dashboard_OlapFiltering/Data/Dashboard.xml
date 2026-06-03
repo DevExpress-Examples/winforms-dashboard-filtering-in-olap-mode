@@ -2,10 +2,10 @@
 <Dashboard CurrencyCulture="en-US">
   <Title Text="Dashboard" />
   <DataConnections>
-    <OlapDataConnection Name="Connection 1" ConnectionString="provider=msolap;data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dll;initial catalog=&quot;Adventure Works DW Standard Edition&quot;;timeout=1200;Cube Name=Adventure Works;" />
+    <OlapDataConnection Name="Connection 1" ConnectionString="provider=msolap;data source=https://demos.devexpress.com/Services/OLAP/msmdpump.dll;initial catalog=&quot;Adventure Works DW Standard Edition&quot;;timeout=1200;Cube Name=Adventure Works;" />
   </DataConnections>
   <DataSources>
-    <OLAPDataSource ComponentName="dataSource1" Name="Data Source 1" ConnectionName="Connection 1" ConnectionString="provider=msolap;data source=http://demos.devexpress.com/Services/OLAP/msmdpump.dll;initial catalog=&quot;Adventure Works DW Standard Edition&quot;;timeout=1200;Cube Name=Adventure Works;" />
+    <OLAPDataSource ComponentName="dataSource1" Name="Data Source 1" ConnectionName="Connection 1" ConnectionString="provider=msolap;data source=https://demos.devexpress.com/Services/OLAP/msmdpump.dll;initial catalog=&quot;Adventure Works DW Standard Edition&quot;;timeout=1200;Cube Name=Adventure Works;" />
   </DataSources>
   <Items>
     <Pivot ComponentName="pivotDashboardItem1" Name="Sales Amount" DataSource="dataSource1">
